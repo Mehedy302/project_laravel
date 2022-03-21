@@ -1,8 +1,18 @@
 @extends('layouts.app')
 @section('content')
+
 <h3>গত ২ সপ্তাহ ধরে আপনার </h3>
 <form action="" method="post">
 {{ csrf_field() }}
+
+<table class="table table-bordered" style="width: 85%; 
+          margin-left: auto;
+          margin-right: auto;
+          border: 1px solid gray; 
+          text-indent: 60px">
+<tr>
+<td>
+
 <h2>১)আপনি কি গত ১৫ দিনে কাজ করার সামান্য আগ্রহ বা আনন্দ পেয়েছেন?</h2>
 <div class="form-check">
   <input class="form-check-input" type="radio" name="q1" id="q1" value='0'>
@@ -273,6 +283,10 @@
 
 
   <button type="submit" class="btn btn-primary">Submit</button>
+  </td>
+</tr>
+</table>
 </form>
+
 
 @endsection
