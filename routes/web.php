@@ -28,4 +28,4 @@ Route::get('/result',[App\Http\Controllers\MentalHealthController::class, 'resul
 Route::get('/ptsd',[App\Http\Controllers\MentalHealthController::class, 'ptsd'])->name('ptsd');
 Route::post('/ptsd',[App\Http\Controllers\MentalHealthController::class, 'ptsdcontroller'])->name('ptsdcontroller');
 Route::get('/bipolart',[App\Http\Controllers\MentalHealthController::class, 'bipolart'])->name('bipolart');
-Route::post('/bipolart',[App\Http\Controllers\MentalHealthController::class, 'bipolartcontroller'])->name('bipolartcontroller');
+Route::post('/bipolart',[App\Http\Controllers\MentalHealthController::class, 'bipoartcontroller'])->name('bipolartcontroller');

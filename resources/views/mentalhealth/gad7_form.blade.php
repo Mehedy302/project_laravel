@@ -1,8 +1,28 @@
 @extends('layouts.app')
 @section('content')
-<h3>গত ২ সপ্তাহ ধরে আপনার </h3>
+<div style="width: 100%; 
+          
+          border: 25px solid green; 
+          ">
+
+
+<div style="width: 85%; 
+          margin-left: auto;
+          margin-right: auto;
+          border: 0px solid gray; 
+          text-indent: -1px;
+          padding-left: 40px;
+          ">
+
 <form action="" method="post">
-{{ csrf_field() }}
+{{ csrf_field() }}  
+
+
+
+
+
+<h3>গত ২ সপ্তাহ ধরে আপনার </h3>
+
 <h2>১)আপনি কি গত ১৫ দিনে স্নায়বিক, উদ্বিগ্ন বা প্রান্তে বোধ করা?</h2>
 <div class="form-check">
   <input class="form-check-input" type="radio" name="q1" id="q1" value='0'>
@@ -209,10 +229,21 @@
 
 
 
+<br><br>
 
-
+<style>
+  .wrapper {
+    text-align: center;
+}
+  </style>
+<div class="wrapper">
 
   <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+<br>
 </form>
+
+</div>
+</div>
 
 @endsection

@@ -132,6 +132,31 @@ const engToBdNum = (str) => {
 
 
 
+        @foreach ($bipolarresult as $key => $value)
+        <tr>
+            <td>বাইপোলার ডিসঅর্ডার টেস্ট(MDQ)</td>
+            <td>{{ $value->created_at }}</td>
+            
+            <td>------</td>
+            
+           
+            <td>
+
+            @if($value->Result ==1) 
+              <h7 style="color:red">  আপনি বাইপোলার ডিসঅর্ডার  সমস্যায় ভুগছিলেন </h7> 
+             @else
+              <h7 style="color:green"> আপনি বাইপোলার ডিসঅর্ডার  সমস্যায় ভুগছিলেন না</h7> 
+
+              @endif
+                
+            </td>
+             
+        </tr>
+        @endforeach
+
+
+
+
 
 
 </table>

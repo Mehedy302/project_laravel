@@ -31,12 +31,12 @@ return new class extends Migration
             $table->string('Q13');
             $table->string('Q14');
             $table->string('Q15');
-            $table->string('Q16');
+            
 
 
 
            
-            $table->string('Total');
+            $table->string('Result');
 
 
 
