@@ -22,6 +22,28 @@ class MentalHealthController extends Controller
 
     public function phq9controller(Request $request)
     {
+        $validatedData = $request->validate([
+
+            'q1' => 'required',
+
+            'q2' => 'required',
+
+            'q3' => 'required',
+            'q4' => 'required',
+
+            'q5' => 'required',
+
+            'q6' => 'required',
+            'q7' => 'required',
+
+            'q8' => 'required',
+
+            'q9' => 'required'
+            
+
+        ]);
+
+
         $new_data = new Phq9();
         $new_data->email = Auth::user()->email;
          $new_data->Q1 = $request->q1;
@@ -70,6 +92,25 @@ class MentalHealthController extends Controller
 
     public function gad7controller(Request $request)
     {
+
+
+        $validatedData = $request->validate([
+
+            'q1' => 'required',
+
+            'q2' => 'required',
+
+            'q3' => 'required',
+            'q4' => 'required',
+
+            'q5' => 'required',
+
+            'q6' => 'required',
+            'q7' => 'required'
+            
+
+        ]);
+
         $new_data = new Gad7();
         $new_data->email = Auth::user()->email;
          $new_data->Q1 = $request->q1;
@@ -107,6 +148,20 @@ class MentalHealthController extends Controller
 
     public function ptsdcontroller(Request $request)
     {
+        $validatedData = $request->validate([
+
+            'q1' => 'required',
+
+            'q2' => 'required',
+
+            'q3' => 'required',
+            'q4' => 'required',
+
+            'q5' => 'required'
+            
+
+        ]);
+
         $new_data = new Ptsd();
         $new_data->email = Auth::user()->email;
          $new_data->Q1 = $request->q1;
@@ -144,6 +199,39 @@ class MentalHealthController extends Controller
 
     public function bipoartcontroller(Request $request)
     {
+
+        $validatedData = $request->validate([
+
+            'q1' => 'required',
+
+            'q2' => 'required',
+
+            'q3' => 'required',
+            'q4' => 'required',
+
+            'q5' => 'required',
+
+            'q6' => 'required',
+            'q7' => 'required',
+
+            'q8' => 'required',
+
+            'q9' => 'required',
+            'q10' => 'required',
+
+            'q11' => 'required',
+
+            'q12' => 'required',
+            'q13' => 'required',
+
+            'q14' => 'required',
+
+            'q15' => 'required'
+            
+
+        ]);
+
+
         $new_data = new Bipolar();
         $new_data->email = Auth::user()->email;
          $new_data->Q1 = $request->q1;

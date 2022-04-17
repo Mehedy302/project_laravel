@@ -1,17 +1,24 @@
 @extends('layouts.app')
 @section('content')
+<div style="width: 100%; 
+          
+          border: 25px solid green; 
+          ">
 
-<h3>গত ২ সপ্তাহ ধরে আপনার </h3>
+
+<div style="width: 85%; 
+          margin-left: auto;
+          margin-right: auto;
+          border: 0px solid gray; 
+          text-indent: -1px;
+          padding-left: 40px;
+          ">
+
+<h3>গত ২ সপ্তাহ ধরে আপনার শরির এবং মনে যা ঘটেছে তার উপর ভিত্তি করে প্রশ্ন গুলোর উত্তর দিন।  </h3>
 <form action="" method="post">
 {{ csrf_field() }}
 
-<table class="table table-bordered" style="width: 85%; 
-          margin-left: auto;
-          margin-right: auto;
-          border: 1px solid gray; 
-          text-indent: 60px">
-<tr>
-<td>
+
 
 <h2>১)আপনি কি গত ১৫ দিনে কাজ করার সামান্য আগ্রহ বা আনন্দ পেয়েছেন?</h2>
 <div class="form-check">
@@ -217,10 +224,8 @@
 </div>
 
 
-<h2>৮)আপনি কি গত ১৫ দিনে চলাফেরা বা কথা বলা এত ধীরে যে অন্য লোকেরা পারে
-লক্ষ্য করেছেন? অথবা উল্টোটা—এত অস্থির হচ্ছে বা
-অস্থির যে আপনি নড়াচড়া করা হয়েছে. এর চেয়ে অনেক বেশি
-চলিত?</h2>
+<h2>৮)আপনি কি গত ১৫ দিনে চলাফেরা বা কথা বলাতে  এত ধীর ছিলেন যে অন্য লোকেরা পরে
+লক্ষ্য করেছে? </h2>
 <div class="form-check">
   <input class="form-check-input" type="radio" name="q8" id="q8" value='0'>
   <label class="form-check-label" for="q8">
@@ -249,8 +254,7 @@
 </div>
 
 
-<h2>৯)আপনি কি গত ১৫ দিনে আপনি মৃত বা আঘাত ভাল হবে যে চিন্তা
-নিজেকে কোনোভাবে?</h2>
+<h2>৯)আপনি কি গত ১৫ দিনে মনে করেছেন যে  আপনি মৃত বা আঘাত পেলে ভাল হবে এরকম কি কোন চিন্তা হয়েছে?</h2>
 <div class="form-check">
   <input class="form-check-input" type="radio" name="q9" id="q9" value='0'>
   <label class="form-check-label" for="q9">
@@ -277,16 +281,24 @@
     সমস্যাটি প্রায় প্রত্যেকদিনই হয়েছে
   </label>
 </div>
+<br>
 
-
-
-
+<style>
+  .wrapper {
+    text-align: center;
+}
+  </style>
+<div class="wrapper">
 
   <button type="submit" class="btn btn-primary">Submit</button>
-  </td>
-</tr>
-</table>
+</div>
+<br>
+ 
+
 </form>
+
+</div>
+</div>
 
 
 @endsection

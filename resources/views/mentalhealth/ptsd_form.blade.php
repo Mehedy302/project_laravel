@@ -1,6 +1,19 @@
 @extends('layouts.app')
 @section('content')
-<h3>গত ১ মাস ধরে আপনার </h3>
+<div style="width: 100%; 
+          
+          border: 25px solid green; 
+          ">
+
+
+<div style="width: 85%; 
+          margin-left: auto;
+          margin-right: auto;
+          border: 0px solid gray; 
+          text-indent: -1px;
+          padding-left: 40px;
+          ">
+<h3>গত ২ সপ্তাহ ধরে আপনার শরির এবং মনে যা ঘটেছে তার উপর ভিত্তি করে প্রশ্ন গুলোর উত্তর দিন। </h3>
 <form action="" method="post">
 {{ csrf_field() }}
 <h2>১)আপনি কি গত  দিনে ঘটনা(গুলি) সম্পর্কে দুঃস্বপ্ন দেখেছেন বা আপনি যখন চাননি তখন ঘটনা(গুলি) সম্পর্কে চিন্তা করেছেন?</h2>
@@ -80,15 +93,19 @@
 
 
 
+<br>
 
-
-
-
-
-
-
+<style>
+  .wrapper {
+    text-align: center;
+}
+  </style>
+<div class="wrapper">
 
   <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+<br>
 </form>
-
+</div>
+</div>
 @endsection
